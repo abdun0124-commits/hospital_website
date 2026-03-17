@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CityCare Hospital</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background: #0a3d62; /* deep navy */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: #f4f6f9;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #82ccdd; /* teal hover */
+    }
+
+    #hero {
+      background: linear-gradient(to right, #0a3d62, #3c6382);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0a3d62;
+      border-bottom: 2px solid #82ccdd;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .doctor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .doctor-card {
+      background: #ffffff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-align: center;
+    }
+
+    .doctor-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #82ccdd;
+    }
+
+    .doctor-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>CityCare Hospital</h1>
+    <p>Caring for Life, Every Day</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#departments">Departments</a></li>
+        <li><a href="#staff">Our Staff</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Welcome to CityCare Hospital</h2>
+    <p>Providing world-class healthcare with compassion and expertise.</p>
+  </section>
+
+  <!-- About Us -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>CityCare Hospital was founded in 1990 with a mission to provide affordable and quality healthcare. 
+       We are equipped with modern facilities, advanced technology, and a dedicated team of professionals.</p>
+  </section>
+
+  <!-- Departments -->
+  <section id="departments">
+    <h2>Departments</h2>
+    <ul>
+      <li>General Medicine</li>
+      <li>Cardiology</li>
+      <li>Pediatrics</li>
+      <li>Orthopedics</li>
+      <li>Emergency & Trauma Care</li>
+      <li>Diagnostic Services</li>
+    </ul>
+  </section>
+
+  <!-- Staff -->
+  <section id="staff">
+    <h2>Our Staff</h2>
+    <div class="doctor-grid">
+      <div class="doctor-card">
+        <img src="doctor1.jpg" alt="Dr. Ayesha Khan">
+        <h3>Dr. Ayesha Khan</h3>
+        <p>Cardiologist — 15 years experience</p>
+      </div>
+      <div class="doctor-card">
+        <img src="doctor2.jpg" alt="Dr. Ravi Sharma">
+        <h3>Dr. Ravi Sharma</h3>
+        <p>Pediatrician — 10 years experience</p>
+      </div>
+      <div class="doctor-card">
+        <img src="doctor3.jpg" alt="Dr. Meera Patel">
+        <h3>Dr. Meera Patel</h3>
+        <p>Orthopedic Surgeon — 12 years experience</p>
+      </div>
+      <div class="doctor-card">
+        <img src="nurse.jpg" alt="Nursing Team">
+        <h3>Nursing Team</h3>
+        <p>Certified nurses providing 24/7 patient care</p>
+      </div>
+      <div class="doctor-card">
+        <img src="admin.jpg" alt="Administrative Staff">
+        <h3>Administrative Staff</h3>
+        <p>Ensuring smooth hospital operations and patient support</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 123 Health Street, Shadnagar, India</p>
+    <p>📞 +91 98765 43210</p>
+    <p>✉️ info@citycarehospital.com</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 CityCare Hospital. All rights reserved.</p>
+  </footer>
+</body>
+</html>
